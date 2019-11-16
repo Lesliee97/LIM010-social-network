@@ -6,11 +6,12 @@
     padding:0;
     box-sizing: border-box;
     font-family: sans-serif;
+
  }
-  
+
  body {
-    background: #ECF0F1 ;
-  
+    background: #fff ;
+
  }
  h1{
     color: #fff;
@@ -41,17 +42,18 @@
  align-items: flex-end;
  justify-content: right;
  margin: 15px;
-  
+
  }*/
  .text-area {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     height: auto;
     box-sizing: border-box;
     border-radius: 0.4rem;
-    border: solid #aed86f 1px;
+    border: 2px solid #6E8A3C;
+
     /* margin: 20px auto; */
-    margin-top: 30px;
+    margin: 20px;
     resize: none;
     /* display: flex; */
     /* justify-content: center; */
@@ -60,7 +62,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0em;
     position: relative;
     padding: 20px;
     width: 70%;
@@ -70,7 +71,7 @@
  #save-text {
     color: #fff;
     font-family: 'Exo 2', sans-serif;
-    background: linear-gradient(to right, #24CCAA, #A2DB95);
+    background: #6E8A3C;
     border-radius: 50px;
     border: 0;
     outline: 0;
@@ -78,19 +79,20 @@
     line-height: 15px;
     padding: 10px;
     cursor: pointer;
+    margin-right: 10px;
     /* bottom: 0; */
     /* margin-left: 200px; */
     /* display: flex; */
     /* justify-content: flex-end; */
     /* position: absolute; */
-    align-self: flex-end;
+
   }
   .template-posts{
     width: 70%;
     height: auto;
     box-sizing: border-box;
     border-radius: 0.4rem;
-    border: solid #aed86f 1px;
+    border:  2px solid #876A1D;
     margin: 20px auto;
     margin-top: 30px;
     resize: none;
@@ -98,28 +100,30 @@
     justify-content: center;
     padding: 10px;
   }
- .pencil{  
-    height: 15px;
-    width: 15px;
+ .pencil{
+    height: 25px;
+    width: 25px;
+    margin: 8px;
+    cursor: pointer;
 
 }
 #printer-post{
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
+ align-items: center;
 }
 .btn-edit {
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 3%;
+    justify-content: space-between;
+    background: #6E8A3C;
 }
-  
+
  .hide{
  display: none;
  }
  /* Style the header with a grey background and some padding */
 
-  
+
  .header {
     overflow: hidden;
      background: linear-gradient(to right, #24CCAA, #A2DB95);
@@ -130,4 +134,139 @@
     justify-content: center;
   }
 
-  
+ .imagen{
+   height: 300px;
+   margin:10px auto;
+	display:flex;
+ }
+ /* ESTILOS DE LOGIN */
+ .box{
+   position: absolute;
+   top: 15%;
+   left: 60%;
+   transform: translate(-50% -50%);
+   width: 400px;
+  padding: 40px;
+   background: #fff ;
+   box-sizing: border-box;
+   box-shadow: 5px 5px 15px #BABDA5 ;
+
+ border-radius: 10px ;
+
+
+ }
+ .box h2 {
+ margin: 0 0 30px;
+ font-size: 40px;
+ padding: 0%;
+ color: #6E8A3C;
+ text-align: center;
+ font-family: 'Great Vibes', cursive;
+
+ }
+.box .inputBox{
+  position: relative ;
+}
+.box .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #364A15;
+
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #876A1D;
+  outline: none;
+  background: transparent;
+}
+.box .inputBox label {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #876A1D;
+  pointer-events: none;
+  transition: .5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+  top: -25px;
+ left: 0;
+ color: #876A1D;
+ font-size: 15px;
+}
+.box input[type="submit"] {
+  background: #6E8A3C;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* ESTILOS IMG-LOGIN */
+.img-login{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.img img {
+  width: 600px;
+  margin-top: 15%;
+  margin-left: 15%;
+}
+.container-one{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:7rem;
+  padding: 0 2rem;
+}
+.login-container{
+  display: flex;
+  align-items: center ;
+  text-align: center;
+}
+.pointer{
+  color: #876A1D;
+  font-size: 500;
+}
+
+/* STILOS DE MI POSTS */
+.new-post{
+  border: 1px solid #876A1D;
+  border-radius: 5px;
+  margin-top: 10%;
+}
+.img-input{
+  width: 40px;
+  height: 40px;
+  margin-left: 20%;
+
+
+}
+#input-file{
+  width: 40px;
+    height: 40px;
+    left: 63px;
+  position: absolute;
+opacity: 0;
+
+}
+.padre{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  border: 5px solid #6E8A3C;
+  width: 30%;
+background: #6E8A3C;
+border-radius: 7px ;
+margin: 20px;
+
+
+}
+

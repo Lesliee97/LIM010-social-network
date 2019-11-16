@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel=StyleSheet href="style.css" TYPE="text/css">
- <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
- <title>Social Network</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="StyleSheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+  <title>Social Network</title>
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
- 
+
 <body>
- <header>
- 
+  <!-- <header>
+
    <div class="header">
      <h1>Muya</h1>
      <div class="header-right">
- 
+
      </div>
    </div>
- </header>
- <main>
-   <section id="loggin" class="hide" >
-     <p>¡Bienvenidas!</p>
+ </header> -->
+
+<div class="pag-login">
+  <div class="container-one">
+      <div class="img">
+          <img src="../src/imgs/plants.png" class="img-login">
+        </div>
+<div class="box" id="loggin">
+    <h2>Muya</h2>
+    <p><cite>"Planta tus sueños y crecerán dias felices"</cite></p>
      <form>
-     <input type="text" placeholder="email" name="email" id="email">
-     <input type="password" placeholder="password" name="password" id="password">
-     <input type="button" id="enter" name="enter" id="enter" value="Log in">
-    </form>
+       <div class="inputBox">
+         <input type="text" name="" required="" id="email">
+         <label>Usuario</label>
+       </div>
+       <div class="inputBox">
+       <input type="password" name="" required="" id="password">
+       <label>Contraseña</label>
+      </div>
+       <input type="submit" name="" value="Ingresar" id="enter">
+       <p>No tienes cuenta?<span id="linkregistro" class="pointer">Regístrate</span></p>
+     </form>
+  </div>
+<!--
+   <div class="box" id="registro">
+      <h2>Muya</h2>
+      <p><cite>"Planta tus sueños y crecerán dias felices"</cite></p>
+       <form>
+         <div class="inputBox">
+           <input type="text" name="" required="" id="user">
+           <label>Usuario</label>
+         </div>
+         <div class="inputBox">
+            <input type="text" name="" required="" id="email2">
+            <label>Correo</label>
+          </div>
+         <div class="inputBox">
+         <input type="password" name="" required="" id="password2">
+         <label>Contraseña</label>
+        </div>
+         <input type="submit" name="" value="Registrarme" id="register" >
+
+       </form>
     </div>
-    <p>O bien ingresa con...</p>
-    <p>No tienes cuenta?<span id="linkregistro" class="pointer">Regístrate</span></p>
-  </section>
-<section id="registro" class="hide">
-  <form>
-    <input type="text" placeholder="user" name="user" id="user">
-    <input type="text" placeholder="email" name="email" id="email">
-    <input type="password" placeholder="password" name="password" id="password">
-    <input type="button" id="register" name="enter" id="enter" value="GUARDAR">
-   </form>
-</section>
-  <section id="posts" class="text">
+</div>
+</div> -->
+
+  <!-- <section id="posts" class="text">
+
     <form id="input-text">
-      <p>¿Que quieres compartir?</p>
-      
-        <textarea class="text-area" placeholder="hasta 150 caracteres" cols="40" rows="5" id="post" maxlength="151"></textarea>
-        <input type="file" id="input-file" >
-        <img src="" height="200" id="posting-img"  >
 
-        <input type="button" id="save-text" value="PUBLICAR">
-     
+      <div class="new-post">
+        <textarea class="text-area" placeholder="¿Que quieres compartir?" cols="40" rows="5" id="post"
+          maxlength="151">
+        </textarea>
+        <div class="padre">
+          <div class="upload-img">
+            <input type="file" id="input-file">
+            <img class="img-input" src="../src/imgs/camera.svg">
+          </div>
+          <div class="posting-post">
+            <img src="" height="200" id="posting-img">
+            <input type="button" id="save-text" value="PUBLICAR">
+          </div>
+        </div>
+      </div>
     </form>
-      <div id="printer-post">
+    <div id="printer-post">
     </div>
-      
-  </section>
 
-</main>
+  </section> -->
 
-<footer>
-</footer>
 
-<script src="main.js"></script>
+  <footer>
+  </footer>
 </body>
+<script src="main.js"></script>
+<script src="data.js"></script>
+
 
 </html>
