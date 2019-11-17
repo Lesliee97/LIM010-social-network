@@ -43,7 +43,7 @@ const pintarArray = (obj, ele) => {
   ele.innerHTML = '';
   let string = '';
   for (let indice = 0; indice < obj.length; indice++) {
-    string += `<div class='card'><textArea class = 'template-posts'cols='40' rows='5' width='70%' name='texto' readOnly maxlength='151'>${obj[indice].text}</textArea> <img src= ${obj[indice].src} class= 'imagen'>
+    string += `<div class='new-post'><textArea class = 'template-posts'cols='40' rows='5' width='70%' name='texto' readOnly maxlength='151'>${obj[indice].text}</textArea> <img src= ${obj[indice].src} class= 'imagen'>
 <div class='btn-edit'><div class="likes"><img src='../src/imgs/like (1).svg' class='pencil' id=${indice}></div><div><img src='../src/imgs/download.svg' class='pencil ' name='save' id=${indice}><img src='../src/imgs/edit (1).svg' class='pencil' id=${indice} name='edit'><img src='../src/imgs/garbage (1).svg' class='pencil' id=${indice} name='delete'></div></div></div>`;
   }
   ele.innerHTML = string;

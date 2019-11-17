@@ -235,11 +235,13 @@
   font-size: 500;
 }
 
+
 /* STILOS DE MI POSTS */
 .new-post{
   border: 1px solid #876A1D;
   border-radius: 5px;
   margin-top: 10%;
+  
 }
 .img-input{
   width: 40px;
@@ -260,13 +262,49 @@ opacity: 0;
   display: flex;
   justify-content: space-between;
 }
-.card{
+/* .card{
   border: 5px solid #6E8A3C;
   width: 30%;
 background: #6E8A3C;
 border-radius: 7px ;
-margin: 20px;
+margin: 20px; */
 
+
+
+
+/* NAVBAR */
+#nav-bar{
+  background: #6E8A3C;
 
 }
-
+.nav-link{
+  color: #fff;
+}
+.btn-off{
+  width:25px;
+  height: 25px;
+ 
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+  }
+  .navbar h2 {
+   
+    font-size: 35px;
+    padding: 0%;
+    color: #fff;
+    margin-left: 25px;
+    margin-top: 5px;
+    font-family: 'Great Vibes', cursive;
+  }
+  /* ordenando contenedores de home */
+  .principal-container{
+    display: flex;
+  }
+ 
+  #card-perfil{
+  width: 10rem;
+    left: 20%;
+    margin-top: 90px;
+    height: 30%;
+}
